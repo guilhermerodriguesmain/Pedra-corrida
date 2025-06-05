@@ -1,0 +1,23 @@
+O presente projeto se destina ao desenvolvimento de uma bet de apostas virtuais com o intuito puro de aprendizagem.
+
+
+==== USUARIO ====
+    usuario começa com carteira vazia 
+    usario pode depositar dinheiro
+    usuario pode apostar determinada quantidade
+    usuario pode retirar dinheiro
+
+==== CASA DE APOSTA ====
+    === CARTEIRA ===
+
+    recebe deposito
+    atualiza carteira
+
+        === ROLETA ===
+        recebe valor de aposta
+        realiza sorteio
+        verifica  resultado
+
+
+    atualiza carteira
+    
