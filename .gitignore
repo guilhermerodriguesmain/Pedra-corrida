@@ -1,5 +1,3 @@
-# Ignorar todos os arquivos por padrão
-*
 
 # Exceto estes:
 !.gitignore
