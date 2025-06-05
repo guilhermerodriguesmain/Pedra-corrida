@@ -1,0 +1,29 @@
+# Ignorar todos os arquivos por padrão
+*
+
+# Exceto estes:
+!.gitignore
+!*.py
+!*/                 # manter pastas
+!**/*.py            # manter todos os arquivos .py em qualquer subpasta
+
+# Ignorar o ambiente virtual (venv ou qualquer pasta comum de venv)
+venv/
+ENV/
+env/
+.venv/
+
+# Ignorar arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar logs e arquivos de debug
+*.log
+
+# Ignorar arquivos do VSCode
+.vscode/
