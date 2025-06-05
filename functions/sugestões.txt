@@ -1,0 +1,7 @@
+mesa recebe heranca da classe jogador
+terminar de formatar menu 
+        palpite de ambos
+        pedras reveladas
+        soma total
+        e quantos ponstos ambora ganharam ou perderam
+corrigir logica de quandi zerar os pontos        
