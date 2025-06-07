@@ -9,6 +9,7 @@ venv/
 ENV/
 env/
 .venv/
+*Scripts/
 
 # Ignorar arquivos temporários do Python
 __pycache__/

@@ -11,7 +11,7 @@ class Jogador:
         self.palpite = int(input(f"{self.nome}, faça seu palpite: "))
         
     def revelar_pedras (self):
-        self.reveladas = int(input(f"{self.nome}, quantas pedras você quer revelar? (1 a 6): "))
+        self.reveladas = int(input(f"{self.nome}, quantas pedras você quer revelar? (0 a 3): "))
         if self.reveladas < 1 or self.reveladas > 6:
             print("Valor inválido. Tente novamente.")
             self.revelar_pedras()
@@ -24,9 +24,4 @@ class Jogador:
     
     def ganhar_pontos (self, valor):
         self.pontos += valor
-        
-    def mostrar_estado (self):
-        print(f"Nome: {self.nome}")
-        print(f"Pontos: {self.pontos}")
-        print(f"Reveladas: {self.reveladas}")
-        
+          

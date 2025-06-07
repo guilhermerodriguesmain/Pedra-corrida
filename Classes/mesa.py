@@ -1,24 +1,20 @@
-
-class Mesa:
+import random
+from Classes.player import Jogador
+class Maquina(Jogador):
     def __init__(self, pontos_iniciais):
-        self.pontos = pontos_iniciais
-        self.pedras_na_mao = 6
+        super().__init__('Máquina', pontos_iniciais)
+        self.palpite = 0
+        self.pedras_na_mao = 3
         self.reveladas = 0
 
     def revelar_pedras(self):
-        import random
-        self.reveladas = random.randint(1, 6)
+        self.reveladas = random.randint(0, 3)
+    
+    def fazer_palpite(self):
+        self.palpite = random.randint(0, 6)
 
     def perder_pontos(self, valor):
-        if valor > self.pontos:
-            self.pontos = 0
-        else:
-            self.pontos -= valor
+        super().perder_pontos(valor)
 
     def ganhar_pontos(self, valor):
-        self.pontos += valor
-
-    def mostrar_estado(self):
-        print(f"Pontos: {self.pontos}")
-        print(f"Reveladas: {self.reveladas}")
-        
+        super().ganhar_pontos(valor)
